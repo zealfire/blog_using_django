@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <div>
+    		<h1><a href="/">Django Girls Blog</a></h1>
+		</div>
+
+    		<div>
+        		<p>published: {{ posts.published_date }}</p>
+        		<h1><a href="{% url 'post_detail' posts.pk %}">{{ posts.title }}</a></h1>
+        		<p>{{ post.text|linebreaks }}</p>
+    		</div>
+    </body>
+</html>
